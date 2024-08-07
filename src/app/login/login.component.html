@@ -1,0 +1,23 @@
+<div class="container">
+<div class="row justify-content-center align-items-center vh-100">
+<div class="col-md-4">
+    <h2 class="text-center">Create Login</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" [(ngModel)]="username" name="username" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" [(ngModel)]="password" name="password" class="form-control mb-3" required>
+        </div>
+        <button type="submit" class="btn btn-primary me-2">Login</button>
+        <button type="button"(click)="reset()" class="btn btn-secondary">Reset</button>
+        <div class="mt-3 text-center">
+            <button type="button"(click)="newUser()" class="btn btn-link">NewUser</button>
+            <button type="button"(click)="forgetPassword()" class="btn btn-link">Forget Password</button>
+
+        </div>
+    </form>
+</div>
+</div></div>
